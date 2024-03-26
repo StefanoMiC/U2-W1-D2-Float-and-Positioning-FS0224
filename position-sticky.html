@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position sticky</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 45px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul {
+            margin-top: 0;
+        }
+
+        p,
+        ul {
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-inline-start: 0;
+        }
+
+        header {
+            background-color: paleturquoise;
+            padding-block: .75rem;
+            padding-inline: 1rem;
+            z-index: 999;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        main {
+            max-width: 800px;
+            min-height: 200vh;
+            margin-inline: auto;
+            margin-top: 3rem;
+            background-color: #ebebeb;
+        }
+
+        .box {
+            min-height: 100px;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .green {
+            background-color: palegreen
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        /* position sticky
+        */
+        .position-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        section {
+            min-height: 100vh;
+        }
+
+        section h2 {
+            background-color: palevioletred;
+            position: sticky;
+            top: 66px;
+        }
+
+        .alert {
+            background-color: crimson;
+            position: sticky;
+            top: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="position-fixed">
+        <nav>
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Position sticky </h2>
+        <div class="box green"></div>
+        <div class="box coral"></div>
+        <div class="box aqua"></div>
+
+        <div class="alert">Attenzione la pagina sta finendo...</div>
+        <section>
+            <h2>Titolo 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et aut totam quis impedit nihil ipsum
+                consectetur ratione quam! Voluptatem possimus nemo porro quia, sit esse repellat provident perferendis
+                explicabo!
+                Omnis odio accusantium eos commodi adipisci temporibus, culpa sint voluptates provident ad dolores.
+                Harum,
+                consequuntur rem, vero cumque ducimus voluptas aliquam rerum saepe, magni quod id provident non iure
+                nesciunt?
+                Numquam voluptatibus rerum molestias totam. Magnam laborum inventore similique debitis voluptas qui? Non
+                omnis odio asperiores, similique minus laboriosam ab deserunt, deleniti quae ipsa, magni aut expedita
+                temporibus dolor hic.
+                Commodi impedit, rerum a voluptatibus quibusdam, magnam ducimus ullam consequuntur nam, eos vitae optio
+                recusandae quidem quos ab! At dolorem nesciunt qui similique cupiditate tenetur? A necessitatibus
+                reiciendis
+                dolorum rem!
+                Culpa quo voluptates sunt et facere dolores, molestias modi libero dolore est repellat quae nisi neque
+                iusto
+                voluptatem voluptatibus eius! Quia, repudiandae ad. Magnam tempora dolor sit ea quis asperiores!
+                Culpa eum fugiat alias laudantium est, minima ratione velit numquam, cupiditate tenetur autem expedita
+                eveniet porro, quod sapiente enim accusamus debitis consequatur. Molestiae maiores distinctio esse alias
+                voluptas voluptatibus libero?
+                At explicabo possimus neque, quae est quidem rem dolores tempore rerum ducimus velit fugiat enim
+                doloribus
+                assumenda accusantium dolor libero fugit vero ad. Consequatur cumque laborum, sed assumenda in
+                excepturi?
+                Ex soluta aperiam provident, deserunt illo ut eum, accusantium dolorem tempora cum nemo aut impedit
+                quasi
+                mollitia iusto in corporis labore ad dolore, cumque expedita ullam! Quaerat ratione est itaque.
+                Magnam at corrupti doloribus, fugit illo adipisci tenetur repellat maxime, doloremque natus soluta ipsa.
+                Qui
+                sit magni quidem fugiat pariatur eligendi ducimus odio, itaque nulla at dolores ipsa nobis esse.
+                Omnis dicta voluptatem saepe totam eligendi magni hic dolore similique voluptate illum quasi in
+                dignissimos,
+                delectus id corporis veritatis expedita porro quidem nisi, esse accusantium! Ducimus eos commodi magni
+                optio.</p>
+        </section>
+        <section>
+            <h2>Titolo 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et aut totam quis impedit nihil ipsum
+                consectetur ratione quam! Voluptatem possimus nemo porro quia, sit esse repellat provident perferendis
+                explicabo!
+                Omnis odio accusantium eos commodi adipisci temporibus, culpa sint voluptates provident ad dolores.
+                Harum,
+                consequuntur rem, vero cumque ducimus voluptas aliquam rerum saepe, magni quod id provident non iure
+                nesciunt?
+                Numquam voluptatibus rerum molestias totam. Magnam laborum inventore similique debitis voluptas qui? Non
+                omnis odio asperiores, similique minus laboriosam ab deserunt, deleniti quae ipsa, magni aut expedita
+                temporibus dolor hic.
+                Commodi impedit, rerum a voluptatibus quibusdam, magnam ducimus ullam consequuntur nam, eos vitae optio
+                recusandae quidem quos ab! At dolorem nesciunt qui similique cupiditate tenetur? A necessitatibus
+                reiciendis
+                dolorum rem!
+                Culpa quo voluptates sunt et facere dolores, molestias modi libero dolore est repellat quae nisi neque
+                iusto
+                voluptatem voluptatibus eius! Quia, repudiandae ad. Magnam tempora dolor sit ea quis asperiores!
+                Culpa eum fugiat alias laudantium est, minima ratione velit numquam, cupiditate tenetur autem expedita
+                eveniet porro, quod sapiente enim accusamus debitis consequatur. Molestiae maiores distinctio esse alias
+                voluptas voluptatibus libero?
+                At explicabo possimus neque, quae est quidem rem dolores tempore rerum ducimus velit fugiat enim
+                doloribus
+                assumenda accusantium dolor libero fugit vero ad. Consequatur cumque laborum, sed assumenda in
+                excepturi?
+                Ex soluta aperiam provident, deserunt illo ut eum, accusantium dolorem tempora cum nemo aut impedit
+                quasi
+                mollitia iusto in corporis labore ad dolore, cumque expedita ullam! Quaerat ratione est itaque.
+                Magnam at corrupti doloribus, fugit illo adipisci tenetur repellat maxime, doloremque natus soluta ipsa.
+                Qui
+                sit magni quidem fugiat pariatur eligendi ducimus odio, itaque nulla at dolores ipsa nobis esse.
+                Omnis dicta voluptatem saepe totam eligendi magni hic dolore similique voluptate illum quasi in
+                dignissimos,
+                delectus id corporis veritatis expedita porro quidem nisi, esse accusantium! Ducimus eos commodi magni
+                optio.</p>
+        </section>
+        <section>
+            <h2>Titolo 4</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et aut totam quis impedit nihil ipsum
+                consectetur ratione quam! Voluptatem possimus nemo porro quia, sit esse repellat provident perferendis
+                explicabo!
+                Omnis odio accusantium eos commodi adipisci temporibus, culpa sint voluptates provident ad dolores.
+                Harum,
+                consequuntur rem, vero cumque ducimus voluptas aliquam rerum saepe, magni quod id provident non iure
+                nesciunt?
+                Numquam voluptatibus rerum molestias totam. Magnam laborum inventore similique debitis voluptas qui? Non
+                omnis odio asperiores, similique minus laboriosam ab deserunt, deleniti quae ipsa, magni aut expedita
+                temporibus dolor hic.
+                Commodi impedit, rerum a voluptatibus quibusdam, magnam ducimus ullam consequuntur nam, eos vitae optio
+                recusandae quidem quos ab! At dolorem nesciunt qui similique cupiditate tenetur? A necessitatibus
+                reiciendis
+                dolorum rem!
+                Culpa quo voluptates sunt et facere dolores, molestias modi libero dolore est repellat quae nisi neque
+                iusto
+                voluptatem voluptatibus eius! Quia, repudiandae ad. Magnam tempora dolor sit ea quis asperiores!
+                Culpa eum fugiat alias laudantium est, minima ratione velit numquam, cupiditate tenetur autem expedita
+                eveniet porro, quod sapiente enim accusamus debitis consequatur. Molestiae maiores distinctio esse alias
+                voluptas voluptatibus libero?
+                At explicabo possimus neque, quae est quidem rem dolores tempore rerum ducimus velit fugiat enim
+                doloribus
+                assumenda accusantium dolor libero fugit vero ad. Consequatur cumque laborum, sed assumenda in
+                excepturi?
+                Ex soluta aperiam provident, deserunt illo ut eum, accusantium dolorem tempora cum nemo aut impedit
+                quasi
+                mollitia iusto in corporis labore ad dolore, cumque expedita ullam! Quaerat ratione est itaque.
+                Magnam at corrupti doloribus, fugit illo adipisci tenetur repellat maxime, doloremque natus soluta ipsa.
+                Qui
+                sit magni quidem fugiat pariatur eligendi ducimus odio, itaque nulla at dolores ipsa nobis esse.
+                Omnis dicta voluptatem saepe totam eligendi magni hic dolore similique voluptate illum quasi in
+                dignissimos,
+                delectus id corporis veritatis expedita porro quidem nisi, esse accusantium! Ducimus eos commodi magni
+                optio.</p>
+        </section>
+
+        <section>
+            <h2>Titolo 5</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id et aut totam quis impedit nihil ipsum
+                consectetur ratione quam! Voluptatem possimus nemo porro quia, sit esse repellat provident perferendis
+                explicabo!
+                Omnis odio accusantium eos commodi adipisci temporibus, culpa sint voluptates provident ad dolores.
+                Harum,
+                consequuntur rem, vero cumque ducimus voluptas aliquam rerum saepe, magni quod id provident non iure
+                nesciunt?
+                Numquam voluptatibus rerum molestias totam. Magnam laborum inventore similique debitis voluptas qui? Non
+                omnis odio asperiores, similique minus laboriosam ab deserunt, deleniti quae ipsa, magni aut expedita
+                temporibus dolor hic.
+                Commodi impedit, rerum a voluptatibus quibusdam, magnam ducimus ullam consequuntur nam, eos vitae optio
+                recusandae quidem quos ab! At dolorem nesciunt qui similique cupiditate tenetur? A necessitatibus
+                reiciendis
+                dolorum rem!
+                Culpa quo voluptates sunt et facere dolores, molestias modi libero dolore est repellat quae nisi neque
+                iusto
+                voluptatem voluptatibus eius! Quia, repudiandae ad. Magnam tempora dolor sit ea quis asperiores!
+                Culpa eum fugiat alias laudantium est, minima ratione velit numquam, cupiditate tenetur autem expedita
+                eveniet porro, quod sapiente enim accusamus debitis consequatur. Molestiae maiores distinctio esse alias
+                voluptas voluptatibus libero?
+                At explicabo possimus neque, quae est quidem rem dolores tempore rerum ducimus velit fugiat enim
+                doloribus
+                assumenda accusantium dolor libero fugit vero ad. Consequatur cumque laborum, sed assumenda in
+                excepturi?
+                Ex soluta aperiam provident, deserunt illo ut eum, accusantium dolorem tempora cum nemo aut impedit
+                quasi
+                mollitia iusto in corporis labore ad dolore, cumque expedita ullam! Quaerat ratione est itaque.
+                Magnam at corrupti doloribus, fugit illo adipisci tenetur repellat maxime, doloremque natus soluta ipsa.
+                Qui
+                sit magni quidem fugiat pariatur eligendi ducimus odio, itaque nulla at dolores ipsa nobis esse.
+                Omnis dicta voluptatem saepe totam eligendi magni hic dolore similique voluptate illum quasi in
+                dignissimos,
+                delectus id corporis veritatis expedita porro quidem nisi, esse accusantium! Ducimus eos commodi magni
+                optio.</p>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position relative</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul {
+            margin-top: 0;
+        }
+
+        main {
+            max-width: 800px;
+            min-height: 40vh;
+            margin-inline: auto;
+            margin-top: 3rem;
+            background-color: #ebebeb;
+        }
+
+        .box {
+            min-height: 100px;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .green {
+            background-color: palegreen
+        }
+
+        .coral {
+            background-color: coral;
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        /* position relative sposta un elemento relativamente alla sua posizione iniziale, che rimarrà riservata, 
+        ovvero gli altri elementi non ne prenderanno il posto.
+        con position relative l'elemento acquisisce anche priorità di posizionamento sull'asse delle Z rispetto ad elementi vicini "non posizionati"
+        */
+        .position-relative {
+            position: relative;
+            left: -50px;
+            top: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Position RELATIVE sposta un elemento relativamente alla sua posizione iniziale, che rimarrà riservata,
+        ovvero gli altri elementi non ne prenderanno il posto</h2>
+    <main>
+        <div class="box green position-relative"></div>
+        <div class="box coral"></div>
+        <div class="box aqua"></div>
+    </main>
+
+</body>
+
+</html>
