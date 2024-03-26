@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul {
+            margin-top: 0;
+        }
+
+        main {
+            /* max-width: 900px; */
+            margin-top: 3rem;
+            margin-inline: auto;
+            border: 2px solid #ebebeb;
+        }
+
+        header {
+            background-color: lightcoral;
+            text-align: center;
+            padding-block: 0.5rem;
+        }
+
+        header ul {
+            list-style: none;
+            padding-inline-start: 0;
+        }
+
+        header ul li {
+            display: inline-block;
+        }
+
+        article {
+            background-color: palegoldenrod;
+        }
+
+        article::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        article img {
+            float: left;
+            margin-inline: 1rem;
+            margin-block: 1rem;
+        }
+
+        article p {
+            padding-block: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        article p::first-line {
+            color: purple;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .clearfix {
+            clear: left
+        }
+
+        .box {
+            min-height: 300px;
+            width: 33.333%;
+            background-color: aqua;
+            border: 1px solid black;
+            float: left;
+        }
+
+        li::marker {
+            content: "🚀"
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h2>Float tests</h2>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Products</li>
+                <li>Contact Us</li>
+            </ul>
+        </header>
+
+        <article>
+            <img src="https://images.unsplash.com/photo-1711349477285-ad95fb50c99b?q=80&w=2655&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="rocks on the beach" height="250">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus obcaecati non expedita, voluptatem
+                excepturi quod amet. Aperiam, tempore pariatur vitae accusantium labore quisquam qui dolorem incidunt,
+                animi molestias minima debitis.
+                Neque id saepe culpa velit inventore, quia soluta iure. Numquam, culpa, rem iure cum facilis quia ab hic
+                explicabo quae corrupti repellat ex amet officia provident deserunt autem illo optio?
+                A, nobis molestias quasi maiores suscipit ipsum ad eveniet vero nam! Inventore optio, atque voluptatum
+                eveniet nobis quisquam! Corrupti sunt eligendi cumque itaque ea tenetur deleniti, qui beatae. Tenetur,
+                commodi.
+                Ipsa officiis excepturi voluptate eum reiciendis facere quisquam, ex, ea nesciunt eos repellendus
+                corrupti autem atque nobis. Sit, minima ad numquam distinctio enim veniam quae labore. Illo impedit
+                repellat dolore?
+                Nemo deserunt minima perspiciatis ut eligendi quos aut autem reprehenderit, suscipit tempora quo
+                consequuntur. Iste id error inventore quos molestiae provident pariatur architecto quod. Eligendi vel
+                laboriosam laborum autem iure?</p>
+            <!-- <div class="clearfix"></div> -->
+        </article>
+        <article>
+            <img src="https://images.unsplash.com/photo-1711349477285-ad95fb50c99b?q=80&w=2655&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="rocks on the beach" height="250">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus obcaecati non expedita, voluptatem
+                excepturi quod amet. Aperiam, tempore pariatur vitae accusantium labore quisquam qui dolorem incidunt,
+                animi molestias minima debitis.
+                Neque id saepe culpa velit inventore, quia soluta iure. Numquam, culpa, rem iure cum facilis quia ab hic
+                explicabo quae corrupti repellat ex amet officia provident deserunt autem illo optio?
+                A, nobis molestias quasi maiores suscipit ipsum ad eveniet vero nam! Inventore optio, atque voluptatum
+                eveniet nobis quisquam! Corrupti sunt eligendi cumque itaque ea tenetur deleniti, qui beatae. Tenetur,
+                commodi.
+                Ipsa officiis excepturi voluptate eum reiciendis facere quisquam, ex, ea nesciunt eos repellendus
+                corrupti autem atque nobis. Sit, minima ad numquam distinctio enim veniam quae labore. Illo impedit
+                repellat dolore?
+                Nemo deserunt minima perspiciatis ut eligendi quos aut autem reprehenderit, suscipit tempora quo
+                consequuntur. Iste id error inventore quos molestiae provident pariatur architecto quod. Eligendi vel
+                laboriosam laborum autem iure?</p>
+            <!-- <div class="clearfix"></div> -->
+        </article>
+
+        <article>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </article>
+
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
